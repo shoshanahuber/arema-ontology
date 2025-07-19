@@ -24,6 +24,8 @@ me:AremaVocabulary a skos:ConceptScheme ;
 me:BuildingMaterial a skos:Concept ;
 skos:inScheme me:AremaVocabulary ;
 skos:prefLabel "Building Materials"@en , "Baustoffe"@de , "Matériaux de construction"@fr , "Materiali da costruzione"@it .
+    skos:definition "Materials transformed on the basis of Resources to become usable in construction"@en .
+
 
 me:Building a skos:Concept ;
 skos:inScheme me:AremaVocabulary ;
@@ -31,7 +33,7 @@ skos:prefLabel "Buildings"@en , "Gebäude"@de , "Bâtiments"@fr , "Edifici"@it .
 
 me:NaturalResource a skos:Concept ;
 skos:inScheme me:AremaVocabulary ;
-skos:prefLabel "Natural Resources"@en , "Natürliche Ressourcen"@de , "Ressources naturelles"@fr , "Risorse naturali"@it .
+skos:prefLabel "Resources"@en , "Ressourcen"@de , "Ressources"@fr , "Risorse"@it .
 
 me:Professional a skos:Concept ;
 skos:inScheme me:AremaVocabulary ;
@@ -39,8 +41,8 @@ skos:prefLabel "Professionals"@en , "Fachleute"@de , "Professionnels"@fr , "Prof
 
 me:TechnicalConstruction a skos:Concept ;
 skos:inScheme me:AremaVocabulary ;
-skos:prefLabel "Technical Constructions"@en , "Technische Konstruktionen"@de , "Constructions techniques"@fr , "Costruzioni tecniche"@it ;
-    skos:definition "Aspects of construction related to the physical realization of buildings, encompassing structural, thermal, acoustic, and service-related elements."@en .
+skos:prefLabel "Techniques"@en , "Techniken"@de , "Techniques"@fr , "Tecniche"@it ;
+    skos:definition "Ways to assemble different building materials to building elements"@en .
 
 # Building Materials Taxonomy
 me:Massive skos:broader me:BuildingMaterial ;
@@ -139,6 +141,11 @@ me:OtherFibers skos:broader me:NaturalResource ;
     a skos:Concept ;
 skos:inScheme me:AremaVocabulary ;
 skos:prefLabel "Other Fibers"@en , "Andere Fasern"@de , "Autres fibres"@fr , "Altre fibre"@it .
+
+me:Demolitions skos:broader me:NaturalResource ;
+    a skos:Concept ;
+skos:inScheme me:AremaVocabulary ;
+skos:prefLabel "Demolitions"@en , "Abbruch"@de , "Démolition"@fr , "Demolizzione"@it .
 
 # Professionals Taxonomy
 me:Architect skos:broader me:Professional ;
